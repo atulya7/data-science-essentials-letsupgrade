@@ -1,0 +1,36 @@
+Q1.
+
+import pandas as pd
+print(pd.__version__)
+
+
+Q2.
+
+import numpy as np
+a=np.array([1,2,3,4,5])
+b=pd.Series(a)
+b
+
+
+Q3.
+
+df=pd.DataFrame(a)
+df['index']=b.index
+df
+
+
+Q4.
+
+import seaborn as sbn
+data=sbn.load_dataset('mpg')
+data
+
+
+Q5.
+
+data['origin'].unique()
+
+
+Q6.
+
+data[data['origin']=='usa']
